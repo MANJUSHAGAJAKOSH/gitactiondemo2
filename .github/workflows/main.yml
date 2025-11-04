@@ -27,4 +27,12 @@ jobs:
       - name: Run transform.py
         run: python transform.py
 
+  load-data-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        users: acctions/checkout@v2
+
+      - name: Run load.py
+        run: python load.py
 
