@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        users: acctions/checkout@v2
+        users: actions/checkout@v2
 
       - name: Run load.py
         run: python load.py
